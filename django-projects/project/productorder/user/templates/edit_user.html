@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit|User</title>
+</head>
+<body>
+	<h2>EDIT YOUR DETAILS</h2>
+	<form method="POST">{% csrf_token %}
+		{{form.as_p}}
+	<input type="submit"></input>
+	 <p>Already have an account?<a href="register_user.html">Login</a></p>
+	</form>
+
+</body>
+</html>

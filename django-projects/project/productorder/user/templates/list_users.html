@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List|Users</title>
+</head>
+<body>
+    <table>
+    	<tbody>
+    		<tr>
+    			<th>Name</th>
+    			<th>Email</th>
+    		</tr>
+    		{% for user in users %}
+    		<tr>
+    			<td>{{user.your_name}}</td>
+    			<td>{{user.email}}</td>
+    			<td><a href="/user/edit/{{user.pk}}/">Edit Details</a></td>
+    			
+    		</tr>
+    		{% endfor %}
+    	</tbody>
+    </table>
+
+</body>
+</html>

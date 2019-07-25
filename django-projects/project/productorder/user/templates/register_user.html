@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register|Login</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body style="margin: 0 auto; width: 600px;">
+	<h2>USER REGISTRATION</h2>
+<div class="form-group">
+	<form method="POST">{% csrf_token %}
+		{{form.as_p}}
+	<button type="submit" class="btn btn-primary">Register</button>
+	 <p>Already have an account?<a href="register_user.html">Login</a></p>
+	</form>
+</div>
+
+</body>
+</html>
